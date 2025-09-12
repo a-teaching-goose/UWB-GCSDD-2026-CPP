@@ -1,0 +1,30 @@
+# C and C++ compiler output
+*.o
+*.obj
+*.d
+*.s
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.dSYM/
+a.out
+
+# Executables created by the teaching demos
+**/mariolab
+**/dangling_pointer
+**/memory_leak
+**/is_it_even_correct
+**/is_it_the_largest_correct
+
+# CMake-generated build folders and files
+build/
+cmake-build-*/
+.idea/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
