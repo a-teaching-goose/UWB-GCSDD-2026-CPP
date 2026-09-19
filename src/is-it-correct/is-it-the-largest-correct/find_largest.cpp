@@ -3,7 +3,7 @@ int findLargest(const int values[], int size) {
 
     for (int i = 0; i < size; ++i) {
         if (values[i] > largest) {
-            largest = values[0];
+            largest = values[i];
         }
     }
 

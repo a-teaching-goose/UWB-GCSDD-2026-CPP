@@ -4,21 +4,21 @@
 // Do not open that file until after writing more tests.
 bool isPassing(int score);
 
-void checkIsPassing(int score, bool expected) {
-    bool actual = isPassing(score);
+
+// unit test
+void checkIsPassing(int grade, bool expected) {
+    bool actual = isPassing(grade);
 
     // Passing tests are silent. Failures show enough information to debug.
     if (actual != expected) {
-        std::cerr << "FAIL: isPassing(" << score << ")\n"
+        std::cerr << "FAIL: isPassing(" << grade << ")\n"
                   << "  expected: " << std::boolalpha << expected << "\n"
                   << "  actual:   " << actual << "\n";
     }
 }
 
 int main() {
-    // One starting test.
     checkIsPassing(82, true);
 
-    // TODO: Add tests for 60, 59, 0, and 100.
     return 0;
 }

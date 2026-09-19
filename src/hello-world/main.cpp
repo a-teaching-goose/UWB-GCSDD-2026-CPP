@@ -1,13 +1,15 @@
 #include <iostream>
 
-bool isPass(int);
-
 int main() {
-    for (int grade = 0; grade<=100; grade++) {
-        std::cout << grade << (isPass(grade) ? ": Pass" : ": Fail") << std::endl;
-    }
-}
+    int * ptr = new int[10];    // allocate 10 int vars from heap
 
-bool isPass(int grade) {
-    return grade>=60;
+    for (int i = 0; i < 10; i++) {
+        ptr[i] = i+1;
+    }
+
+    *(ptr+4) = 99;
+
+    for (int i = 0; i < 10; i++) {
+        std::cout << ptr[i] << std::endl;
+    }
 }
