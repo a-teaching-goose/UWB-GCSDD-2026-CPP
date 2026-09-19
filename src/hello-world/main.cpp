@@ -1,13 +1,13 @@
 #include <iostream>
 
-int main() {
-    int a = 10;
-    std::string s = "Hello World!";
+bool isPass(int);
 
-    // control flows
-    for (int i =0; i<a; i++) {
-        if (!(i%2)) {
-            std::cout << i << ": " << s << "\n" << std::endl;
-        }
+int main() {
+    for (int grade = 0; grade<=100; grade++) {
+        std::cout << grade << (isPass(grade) ? ": Pass" : ": Fail") << std::endl;
     }
+}
+
+bool isPass(int grade) {
+    return grade>=60;
 }
